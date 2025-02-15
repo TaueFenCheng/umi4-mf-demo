@@ -59,4 +59,20 @@ export default defineConfig({
     // shared: { react: { eager: true }, "react-dom": { eager: true } },
   },
   npmClient: 'pnpm',
+  // chainWebpack: (config) => {
+  //   config.plugin('module-federation').use(require('webpack').container.ModuleFederationPlugin, [{
+  //     name: 'remoteApp',
+  //     // filename: 'remoteEntry.js',
+  //     remotes: {
+  //       remoteApp: 'remoteApp@http://localhost:8010/remoteEntry.js',
+  //     },
+  //     shared: { react: { eager: true, requiredVersion: '^18.0.0', }, "react-dom": { eager: true, requiredVersion: '^18.0.0', } },
+  //     // shared: {
+  //     // react: { eager: true },
+  //     // 'react-dom': { eager: true },
+  //     // react: { singleton: true, eager: true },
+  //     // 'react-dom': { singleton: true, eager: true },
+  //     // },
+  //   }]);
+  // }
 });
